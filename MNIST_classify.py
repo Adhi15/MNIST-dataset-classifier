@@ -39,10 +39,10 @@ model.fit(train_image,to_categorical(train_labels),epochs=3 ,batch_size=3)
 
 model.evaluate(test_img,to_categorical(test_labels))
 
-prdct = model.predict(test_img[:5])
+prdct = model.predict(test_img[:3])
 
 print("The predicted numbers:")
 print (np.argmax(prdct, axis =1))
 
 print("The actual numbers:")
-print(test_labels[:5])
+print(test_labels[:3])
